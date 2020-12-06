@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!--
+Name: Emma
+Date Created: 06/12/20
+Most recent revision: today
+-->
+<html lang="en">
+
+<head>
+  <title>Home Page</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <h1>Yummy Food</h1>
+<header>
+
+<hr />
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+<hr />
+
+
+<section>
+
+<form action="submit.html" method="POST">
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name"><br />
+
+<label for="email">Email:</label>
+<input type="text" id="email" name="email"><br />
+
+<label for="phone">Phone:</label>
+<input type="text" id="phone" name="phone"><br />
+
+<label for="inquiry">Reason for Inquiry:</label>
+<select id="inquiry">
+  <option value="catering" selected>Catering</option>
+  <option value="private-party">Private Party</option>
+  <option value="feedback">Feedback</option>
+  <option value="other">Other</option>
+</select><br />
+
+<label for="info">Additional Information:</label>
+<textarea id="info" value="info"></textarea><br />
+
+
+<label for="visit">Have you been to the restaurant?</label>
+<fieldset id="visit">
+  <input type="radio" id="choice1" value="no" name="vistied" selected>
+  <label for="choice1">No</label>
+
+  <input type="radio" id="choice2" value="yes" name="vistied" selected>
+  <label for="choice2">Yes</label><br />
+</fieldset>
+
+
+<label for="contactDay">Best days to contact you:</label>
+<fieldset id="contactDay">
+  <input type="checkbox" id="m" value="m" name="day">
+  <label for="m">M</label>
+
+  <input type="checkbox" id="t" value="t" name="day">
+  <label for="t">T</label>
+
+  <input type="checkbox" id="w" value="w" name="day">
+  <label for="w">W</label>
+
+  <input type="checkbox" id="th" value="th" name="day">
+  <label for="th">Th</label>
+
+  <input type="checkbox" id="f" value="f" name="day">
+  <label for="f">F</label>
+</fieldset>
+
+<input type="submit" name="submit" value="Send Request">
+
+</form>
+
+</section>
+
+
+<footer>
+  <hr />
+  <p>Yum Road, Food Ville, EA7 1OP.</p>
+  <p>12345678910</p>
+</footer>
+
+</body>
+
+</html>

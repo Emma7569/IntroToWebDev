@@ -1,0 +1,45 @@
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline;
+  padding-right: 20px;
+}
+
+header h1,
+footer p {
+  text-align: center;
+}
+
+section#index {
+  margin: auto;
+  width: 400px;
+}
+
+table p,
+table h3 {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+/* from internet */
+label {
+    grid-column: 1 / 2;
+}
+
+input,
+button {
+    grid-column: 2 / 3;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+}
+
+form label {
+  text-align: right;
+}
