@@ -51,8 +51,9 @@ Most recent revision: today
 <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 <nav>
   <p><a href="">Home</a></p>
-  <p><a href="projects.html">Projects</a></p>
+  <p><a href="contact.html">Contact Me</a></p>
   <p><a href="testimonials.html">Testimonials</a></p>
+  <div class="clear-float"></div>
 </nav>
 
 
@@ -64,62 +65,73 @@ Most recent revision: today
     <p>You should not see any differences at all. Your page should look like it did when you <strong>first</strong> opened it up at the beginning of this activity. This is because browsers don't apply any default formatting to these semantic elements. However, these elements will come in useful later, when we use CSS styles to change how these blocks are formatted in the browser.</p>
   </article>
 
+  <div class="clear-float"></div>
+
   <article id="past-experiences">
     <h2><em>Past Experiences</em></h2>
     <img src="images/IMG_0876.jpg" alt="Emma's past experiences" width=30% />
 
-    <table>
-      <caption>Employment History</caption>
-      <thead>
+    <div class="right-content">
+      <table>
+        <caption>Employment History</caption>
+        <thead>
+          <tr>
+            <th>Years of Employment</th>
+            <th>Title</th>
+            <th>Company</th>
+          </tr>
+        </thead>
+
+        <tbody>
         <tr>
-          <th>Years of Employment</th>
-          <th>Title</th>
-          <th>Company</th>
+          <td>2020-present</td>
+          <td>Student</td>
+          <td>The Software Guild</td>
         </tr>
-      </thead>
 
-      <tbody>
-      <tr>
-        <td>2020-present</td>
-        <td>Student</td>
-        <td>The Software Guild</td>
-      </tr>
+        <tr>
+          <td>2017-2020</td>
+          <td>Student</td>
+          <td>University of Reading</td>
+        </tr>
+        </tbody>
 
-      <tr>
-        <td>2017-2020</td>
-        <td>Student</td>
-        <td>University of Reading</td>
-      </tr>
-      </tbody>
-
-    </table>
-
+      </table>
+    </div>
   </article>
+
+
+  <div class="clear-float"></div>
 
 
   <article id="hobbies">
     <h2><em>Hobbies</em></h2>
     <img src="images/terrarium.jpg" alt="Emma's hobbies" width=30% />
-    <ul>
-      <li>Gardening</li>
-
-      <ol>
-        <li>Caring for plants</li>
-        <li>Watering plants</li>
-      </ol>
-
-    </ul>
-
-
-    <ul>
-      <li>Coding</li>
+    <div class="right-content">
       <ul>
-        <li>Writing this</li>
-        <li>Getting into this course</li>
-        <li>Getting hired</li>
+        <li>Gardening</li>
+
+        <ol>
+          <li>Caring for plants</li>
+          <li>Watering plants</li>
+        </ol>
+
       </ul>
-    </ul>
+
+
+      <ul>
+        <li>Coding</li>
+        <ul>
+          <li>Writing this</li>
+          <li>Getting into this course</li>
+          <li>Getting hired</li>
+        </ul>
+      </ul>
+    </div>
   </article>
+
+  <div class="clear-float"></div>
+
 
 </section>
 
