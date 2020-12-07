@@ -1,0 +1,61 @@
+/*
+Name: Emma
+Date Created: 07/12/20
+Most recent revision: today
+*/
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  color: #0d1f2d;
+  background-color: #fef9ff;
+}
+
+header, footer {
+  font-size: 1.5em;
+  color: darkred;
+  background-color: hotpink;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+nav {
+  border-top: 2px red dashed;
+  border-bottom: 2px red dashed;
+  margin-top: 4px;
+}
+
+
+
+
+/* Form stuff */
+
+form{
+  padding: 15px;
+  margin-left: 33%;
+}
+input[type="text"],fieldset,textarea {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+select {
+  width: 40%;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"] {
+  font-size: 1.2em;
+  color: darkred;
+  background-color: hotpink;
+  text-align: center;
+  padding: 9px;
+}
+
+h2 {
+  text-align: center;
+}

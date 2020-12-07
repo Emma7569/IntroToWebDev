@@ -2,25 +2,54 @@
 
 <!--
 Name: Emma
-Date Created: 06/12/20
+Date Created: 07/12/20
 Most recent revision: today
 -->
 <html lang="en">
 
 <head>
   <title>Emma's Portfolio</title>
+  <link href="styles/style.css" type="text/css" rel="stylesheet">
+  <style>
+    table,th,td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table {
+      width: 50%;
+      margin: auto;
+    }
+
+    td, th {
+      padding: 10px;
+    }
+
+    thead {
+      background-color: grey;
+    }
+
+    tbody tr:nth-child(odd){
+      background-color: green;
+    }
+
+    table caption {
+      font-weight: bold;
+      margin: 10px;
+    }
+
+  </style>
 </head>
 
 <body>
 
 <header>
   <h1>Portfolio for Emma</h1>
-<header>
+</header>
 
 
 <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 <nav>
-  <hr />
   <p><a href="">Home</a></p>
   <p><a href="projects.html">Projects</a></p>
   <p><a href="testimonials.html">Testimonials</a></p>
@@ -28,7 +57,6 @@ Most recent revision: today
 
 
 <section>
-  <hr />
 
   <article id="about-me">
     <h2><em>About me</em></h2>
@@ -40,14 +68,17 @@ Most recent revision: today
     <h2><em>Past Experiences</em></h2>
     <img src="images/IMG_0876.jpg" alt="Emma's past experiences" width=30% />
 
-    <table border="2" width=50%>
+    <table>
       <caption>Employment History</caption>
-      <tr>
-        <th>Years of Employment</th>
-        <th>Title</th>
-        <th>Company</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>Years of Employment</th>
+          <th>Title</th>
+          <th>Company</th>
+        </tr>
+      </thead>
 
+      <tbody>
       <tr>
         <td>2020-present</td>
         <td>Student</td>
@@ -59,6 +90,8 @@ Most recent revision: today
         <td>Student</td>
         <td>University of Reading</td>
       </tr>
+      </tbody>
+
     </table>
 
   </article>
@@ -92,7 +125,6 @@ Most recent revision: today
 
 
 <footer>
-  <hr />
   <p>&copy; 2020 Emma. All rights reserved.</p>
 </footer>
 
