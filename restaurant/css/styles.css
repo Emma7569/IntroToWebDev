@@ -11,6 +11,10 @@ footer p {
   text-align: center;
 }
 
+section table{
+    margin: auto;
+}
+
 section#index {
   margin: auto;
   width: 400px;
@@ -30,13 +34,16 @@ label {
 }
 
 input,
-button {
+button,
+select,
+textarea {
     grid-column: 2 / 3;
+    max-width: 400px;
 }
 
 form {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: auto auto;
     grid-gap: 16px;
 }
 
