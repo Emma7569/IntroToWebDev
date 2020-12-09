@@ -22,6 +22,16 @@ for (var n = 1; n <= 7; n++) {
 console.log("FOR ONE TO TEN");
 // Write your code here:
 
+/*
+for(var n=1;n<=10;n++){
+  console.log(n);
+}
+*/
+var n = 1;
+while(n <= 10){
+  console.log(n);
+  n++
+}
 
 
 // 2. COUNT BY TWOS FROM TWO TO TWELVE
@@ -40,6 +50,18 @@ console.log("FOR ONE TO TEN");
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
 
+/*
+for(var n = 2; n<=12; n = n+2){
+  console.log(n);
+}
+*/
+n=2;
+while(n <= 12){
+  if(n%2==0){
+    console.log(n);
+  }
+  n++;
+}
 
 
 // 3. COUNT BACKWARD FROM SIX
@@ -59,13 +81,23 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
 
+/*
+for(var n=6; n>=0; n--){
+  console.log(n);
+}
+*/
 
+n = 6;
+while(n>=0){
+  console.log(n)
+  n--;
+}
 
 // 4. SUM EVENS
 // ============
 // You're given two variables with numeric values:
 
-var limit = 10; // We stop looping when we reach this number.
+var limit = 8; // We stop looping when we reach this number.
 var sum = 0;    // We add even numbers to this variable.
 
 // Write a for loop that loops from 0 to limit.
@@ -78,16 +110,35 @@ var sum = 0;    // We add even numbers to this variable.
 console.log("SUM EVENS");
 // Write your code here:
 
+/*
+for(var n = 0; n <= limit; n++){
+  if(n%2 == 0){
+    sum = sum + n;
+  }
+}
+//for negative limit, the for loop condition is immediately satisfied since n=0 > limit.
+*/
+
+n=0;
+while(n <= limit){
+  if(n%2 == 0){
+    sum = sum + n;
+  }
+  n++;
+}
+
+
 console.log("limit = %s, sum = %s", limit, sum);
 
 // 5. FIND A FAVORITE NUMBER
 // =========================
 // You're given two variables with numeric values:
 
-var winniesFavoriteNumber = 53; // Winnie's favorite number
+var winniesFavoriteNumber = 14; // Winnie's favorite number
 var kaisFavoriteNumber = 44;    // Kai's favorite number
+var maddiesFavoriteNumber = 12;    // Maddies favorite number
 
-// Write a for loop that loops until it reaches either winniesFavoriteNumber 
+// Write a for loop that loops until it reaches either winniesFavoriteNumber
 // or kaisFavoriteNumber and then stop.
 // Print the final number to the JavaScript console.
 // Try changing the value of winniesFavoriteNumber and kaisFavoriteNumber.
@@ -95,6 +146,17 @@ var kaisFavoriteNumber = 44;    // Kai's favorite number
 console.log("FIND A FAVORITE NUMBER");
 // Write your code here:
 
+/*
+for(var n = 0; n < winniesFavoriteNumber && n < kaisFavoriteNumber && n < maddiesFavoriteNumber; n++){
+
+}
+console.log(n);
+*/
+
+while(n < winniesFavoriteNumber && n < kaisFavoriteNumber && n < maddiesFavoriteNumber){
+  n++;
+}
+console.log(n);
 
 
 // CHALLENGE: WHILE LOOPS
