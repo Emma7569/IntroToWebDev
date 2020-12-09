@@ -3,7 +3,7 @@
 <!--
 Name: Emma
 Date Created: 06/12/20
-Most recent revision: today
+Most recent revision: 09/12/20
 -->
 <html lang="en">
 
@@ -14,31 +14,28 @@ Most recent revision: today
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet">
-
+  <link href="css/restaurantStyles.css" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="jumbotron">
+<header>
   <h1>Yummy Food</h1>
 </header>
 
-<hr />
 
-<nav>
-  <ul>
-    <li><a href="index.html" class="btn btn-primary">Home</a></li>
-    <li><a href="menu.html" class="btn btn-primary">Menu</a></li>
-    <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+<nav class="navbar navbar-expand">
+  <ul class="navbar-nav">
+    <li class="nav-item"><a href="index.html" class="btn nav-link">Home</a></li>
+    <li class="nav-item"><a href="menu.html" class="btn nav-link">Menu</a></li>
+    <li class="nav-item"><a href="contact.html" class="btn nav-link">Contact Us</a></li>
   </ul>
 </nav>
-<hr />
 
 
-<section id="index">
+<section id="about">
 
-<img src="images/restaurant.jpg" alt="Photo of Yummy Food." width="400px">
+<img src="images/restaurant.jpg" alt="Photo of Yummy Food." style="max-width: 400px; max-height: 150px;">
 
 <article>
   <h3>Restaurant Description</h3>
@@ -47,16 +44,18 @@ Most recent revision: today
 
 <article id="review">
   <h4>Read a recent review!</h4>
-  <a href="">4-star taste</a>, <a href="">1-star price</a>
+  <a href="https://www.tripadvisor.co.uk/ShowUserReviews-g196538-d1082778-r773655546-Maison_Lameloise-Chagny_Saone_et_Loire_Bourgogne_Franche_Comte.html" target="_blank">4-star taste</a>,
+  <a href="https://www.tripadvisor.co.uk/ShowUserReviews-g196538-d1082778-r773655546-Maison_Lameloise-Chagny_Saone_et_Loire_Bourgogne_Franche_Comte.html" target="_blank">1-star price</a>
 </article>
 
 </section>
 
 
 <footer>
-  <hr />
-  <p>Yum Road, Food Ville, EA7 1OP.</p>
-  <p>12345678910</p>
+  <p>
+    Yum Road, Food Ville, EA7 1OP<br />
+    12345678910
+  </p>
 </footer>
 
 

@@ -1,0 +1,129 @@
+/*
+Name: Emma
+Date Created: 07/12/20
+Most recent revision: 09/12/20
+*/
+
+
+/* Global Styles */
+body {
+  font-family: arial, sans-serif;
+  background-color: #f6b3ff;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', arial, sans-serif;
+}
+
+header {
+  font-family: 'Nerko One', arial, sans-serif;
+  background-color: #71137d !important;
+  text-align: center;
+  color: #f6b3ff;
+  max-height: 100px;
+  padding: 20px 0px 20px 0px;
+}
+
+nav {
+  background-color: #ed9cf7;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  border-top: 1px solid #46004f;
+  border-bottom: 1px solid #46004f;
+}
+
+nav .btn {
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: #71137d;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #af46bd;
+  color: #71137d;
+}
+
+.btn:active {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #ed9cf7;
+  border-top: 1px solid #46004f;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+
+
+/* Homepage styles */
+#about {
+  margin: auto;
+  width: 400px;
+}
+
+#review a {
+  color: #71137d;
+  text-decoration: underline;
+}
+
+#review a:visited {
+  color: #390740;
+  text-decoration: underline;
+}
+
+#review a:hover {
+  font-weight: bold;
+}
+
+#review a:active {
+  text-decoration: none;
+}
+
+
+
+/* Menu styles */
+#menu,
+#beverages {
+    margin: auto;
+    text-align: center;
+    background-color: #d6b8a1;
+    padding: 20px;
+}
+
+#menu strong {
+  font-size: 1.2em;
+}
+
+#beverages {
+  border-top: 1px dashed #46004f;
+  padding-top: 10px;
+}
+#beverages caption {
+  caption-side: top;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#beverages table td {
+  padding: 15px 30px 15px 30px;
+}
+
+#beverages table tr:nth-child(even){
+  background-color: #c9a971;
+}
+
+#beverages table tr:nth-child(odd){
+  background-color: #b08e51;
+}
