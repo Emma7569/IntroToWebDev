@@ -92,11 +92,16 @@ footer p {
 
 
 /* Menu styles */
-#menu,
-#beverages {
+#menu-section{
+    border-radius: 10px;
+    border: 3px solid orange;
     margin: auto;
     text-align: center;
     background-color: #d6b8a1;
+}
+
+#menu,
+#beverages {
     padding: 20px;
 }
 
@@ -106,8 +111,8 @@ footer p {
 
 #beverages {
   border-top: 1px dashed #46004f;
-  padding-top: 10px;
 }
+
 #beverages caption {
   caption-side: top;
   font-weight: bold;
