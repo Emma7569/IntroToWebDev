@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Evens</title>
+  <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+
+  <style>
+  .col-form-label {
+    text-align: right;
+  }
+
+  form {
+    max-width: 400px;
+  }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Sample</h1>
+
+  <form name="displayEvens" class="needs-validation" onsubmit="return validate();" novalidate>
+
+      <div class="form-group form-row">
+        <label for="no1" class="col-8 col-form-label">Starting Number</label>
+        <input type="number" id="no1" class="form-control col-4" required>
+        <div class="invalid-feedback">
+          Starting number must be a number.
+        </div>
+      </div>
+
+      <div class="form-group form-row">
+        <label for="no2" class="col-8 col-form-label">Ending Number</label>
+        <input type="number" id="no2" class="form-control col-4" required>
+        <div class="invalid-feedback" id="te">
+          Ending number must be a number greater than the starting number.
+        </div>
+      </div>
+
+      <div class="form-group form-row">
+        <label for="step" class="col-8 col-form-label">Step</label>
+        <input type="number" id="step" class="form-control col-4" min="0" required>
+        <div class="invalid-feedback">
+          Step must be a positive number.
+        </div>
+      </div>
+
+      <div class="form-group" style="text-align: center;">
+        <input id="submitButton" type="submit" class="btn btn-secondary">
+      </div>
+
+  </form>
+
+  <div id="results">
+  </div>
+
+
+</div>
+
+<script src="displayEvens.js"></script>
+</body>
+</html>
