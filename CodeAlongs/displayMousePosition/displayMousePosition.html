@@ -9,6 +9,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
 
+<style>
+div[name="mouseArea"]{
+  border: 1px solid black;
+  width: 500px;
+  height: 200px;
+}
+</style>
 </head>
 <body>
     <div class="container">
@@ -28,6 +35,9 @@
 
         <div>
             <button name="btnToggle" id="btnToggle2" class="btn btn-success">Start mouse tracking.</button>
+        </div>
+
+        <div name="mouseArea">
         </div>
     </div>
     <script src="displayMousePosition.js"></script>
