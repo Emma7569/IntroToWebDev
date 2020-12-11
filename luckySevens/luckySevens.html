@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<!--
+Name: Emma
+Date Created: 11/12/20
+Most recent revision: 11/12/20
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Sevens</title>
+  <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+
+  <style>
+  body {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  form .btn,
+  form .input-group {
+    border: 2px solid black;
+  }
+/*
+  form .input-group {
+    padding: 0 !important;
+  } */
+  form .input-group-text {
+    background: transparent;
+    border: none;
+    padding-right: 1px;
+  }
+
+  form .form-control {
+    border: none;
+    padding-left: 1px;
+
+  }
+
+  hr {
+    border: 1px solid black;
+  }
+
+  /* Results styles */
+
+  table {
+    border: 3px double black !important;
+    text-align: left;
+  }
+
+  td, th {
+    border: 1px solid black !important;
+  }
+
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Lucky Sevens</h1>
+
+
+<form name="luckySevens" class="needs-validation" onsubmit="return validate();" novalidate>
+  <div class="form-group form-row">
+
+    <label for="bet" class="col-form-label col-6">Starting Bet:</label>
+
+    <div class="input-group col-6">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="addon1">$</span>
+      </div> <!-- input-group-prepend ends -->
+
+      <input type="number" class="form-control" id="bet" min="0.01" step="0.01" placeholder="0.00" aria-label="bet" aria-describedby="addon1">
+    </div> <!-- input-group ends -->
+
+    <div class="text-danger" style="display:none;" id="warning">
+      <small>Starting bet must be greater than zero.</small>
+    </div>
+
+  </div> <!-- bet form-group ends -->
+
+  <div class="form-group">
+    <button type="submit" id="buttonSubmit" class="btn">Play</button>
+  </div>  <!-- button form-group ends -->
+
+</form>
+
+
+
+<div id="results-div" style="display: none;">
+
+<hr />
+<h2>Results</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Starting Bet</th>
+      <td>$1.00</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>Total Rolls Before Going Broke</th>
+      <td>1</td>
+    </tr>
+
+    <tr>
+      <th>Highest Amount Won</th>
+      <td>1</td>
+    </tr>
+
+    <tr>
+      <th>Roll Count at Highest Amount Won</th>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="luckySevens.js"></script>
+</body>
+
+</html>
