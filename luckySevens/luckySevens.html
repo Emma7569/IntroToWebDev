@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <!--
-Name: Emma
+Name: Emma Wilby
 Date Created: 11/12/20
-Most recent revision: 11/12/20
+Most recent revision: 14/12/20
 -->
 
 <html lang="en">
@@ -18,6 +18,8 @@ Most recent revision: 11/12/20
 
 
   <style>
+
+  /* General styles */
   body {
     max-width: 500px;
     margin: auto;
@@ -28,14 +30,35 @@ Most recent revision: 11/12/20
     font-size: 2em;
   }
 
+  hr {
+    border: 1px solid black;
+  }
+
+
+  /* Form styles */
   form .btn,
   form .input-group {
     border: 2px solid black;
   }
-/*
+
+  form .btn {
+    font-weight: bold;
+  }
+
+  form label {
+    font-weight: bold;
+    text-align: right;
+  }
+
   form .input-group {
-    padding: 0 !important;
-  } */
+    max-width: 100px;
+    padding-right: 0px;
+  }
+
+  form input[type="number"]{
+    padding-right: 0px;
+  }
+
   form .input-group-text {
     background: transparent;
     border: none;
@@ -45,24 +68,28 @@ Most recent revision: 11/12/20
   form .form-control {
     border: none;
     padding-left: 1px;
-
   }
 
-  hr {
-    border: 1px solid black;
-  }
 
   /* Results styles */
 
   table {
-    border: 3px double black !important;
+    border: 3px solid black !important;
     text-align: left;
   }
 
   td, th {
     border: 1px solid black !important;
+    min-width: 80px;
   }
 
+  thead {
+    background-color: #a8a8a8;
+  }
+
+  tbody tr:nth-child(odd){
+    background-color: lightgrey;
+  }
 
   </style>
 </head>
@@ -71,70 +98,69 @@ Most recent revision: 11/12/20
 
 <div class="container">
 
-<h1>Lucky Sevens</h1>
+  <h1>Lucky Sevens</h1>
 
 
-<form name="luckySevens" class="needs-validation" onsubmit="return validate();" novalidate>
-  <div class="form-group form-row">
+  <form name="luckySevens" class="needs-validation" onsubmit="return validate();" novalidate>
+    <div class="form-group form-row">
 
-    <label for="bet" class="col-form-label col-6">Starting Bet:</label>
+      <label for="bet" class="col-form-label col-6 pr-3">Starting Bet:</label>
 
-    <div class="input-group col-6">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="addon1">$</span>
-      </div> <!-- input-group-prepend ends -->
+      <div class="input-group col-6 ml-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="addon1">$</span>
+        </div> <!-- addon1 input-group-prepend ends -->
 
-      <input type="number" class="form-control" id="bet" min="0.01" step="0.01" placeholder="0.00" aria-label="bet" aria-describedby="addon1">
-    </div> <!-- input-group ends -->
+        <input type="number" class="form-control" id="bet" min="0.01" step="0.01" placeholder="0.00" required aria-label="bet" aria-describedby="addon1">
+      </div> <!-- bet input-group ends -->
 
-    <div class="text-danger" style="display:none;" id="warning">
-      <small>Starting bet must be greater than zero.</small>
-    </div>
+      <div class="text-danger" style="display:none;" id="warning">
+        <small>Starting bet must be greater than zero.</small>
+      </div>
 
-  </div> <!-- bet form-group ends -->
+    </div> <!-- bet form-group ends -->
 
-  <div class="form-group">
-    <button type="submit" id="buttonSubmit" class="btn">Play</button>
-  </div>  <!-- button form-group ends -->
-
-</form>
-
+    <div class="form-group">
+      <button type="submit" id="buttonSubmit" class="btn">Play</button>
+    </div>  <!-- button form-group ends -->
+  </form>
 
 
-<div id="results-div" style="display: none;">
 
-<hr />
-<h2>Results</h2>
+  <div id="results-div" style="display: none;">
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Starting Bet</th>
-      <td>$1.00</td>
-    </tr>
-  </thead>
+    <hr />
+    <h2>Results</h2>
 
-  <tbody>
-    <tr>
-      <th>Total Rolls Before Going Broke</th>
-      <td>1</td>
-    </tr>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Starting Bet</th>
+          <td>$<span id="starting-bet"></span></td>
+        </tr>
+      </thead>
 
-    <tr>
-      <th>Highest Amount Won</th>
-      <td>1</td>
-    </tr>
+      <tbody>
+        <tr>
+          <th>Total Rolls Before Going Broke</th>
+          <td id="total-rolls"></td>
+        </tr>
 
-    <tr>
-      <th>Roll Count at Highest Amount Won</th>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
+        <tr>
+          <th>Highest Amount Won</th>
+          <td>$<span id="max-bet"></span></td>
+        </tr>
 
-</div>
+        <tr>
+          <th>Roll Count at Highest Amount Won</th>
+          <td id="max-bet-rolls"></td>
+        </tr>
+      </tbody>
+    </table>
 
-</div>
+  </div> <!-- results div ends -->
+
+</div> <!-- container div ends -->
 
 <script type="text/javascript" src="luckySevens.js"></script>
 </body>
