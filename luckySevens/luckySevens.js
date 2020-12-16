@@ -1,7 +1,9 @@
 //
 // Name: Emma Wilby
+// Assignment: Lucky Sevens
 // Date Created: 11/12/20
-// Most recent revision: 14/12/20
+// Most recent revision: 16/12/20
+// Date submitted: 16/12/20
 //
 
 function validate(){

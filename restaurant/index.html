@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 
 <!--
-Name: Emma
+Name: Emma Wilby
+Assignment: Restaurant Site
 Date Created: 06/12/20
-Most recent revision: 09/12/20
+Most recent revision: 16/12/20
+Date Submitted: 16/12/20
 -->
+
 <html lang="en">
 
 <head>
@@ -15,6 +18,7 @@ Most recent revision: 09/12/20
   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="css/restaurantStyles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5f571c4242.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,29 +29,44 @@ Most recent revision: 09/12/20
 
 
 <nav class="navbar navbar-expand">
-  <ul class="navbar-nav">
-    <li class="nav-item"><a href="index.html" class="btn nav-link">Home</a></li>
+  <ul class="nav nav-pills">
+    <li class="nav-item active">
+      <a href="index.html" class="btn nav-link">
+        <i class="fa fa-home"></i>
+        <noscript>Home</noscript> <!-- if javascript disabled -->
+      </a>
+    </li>
     <li class="nav-item"><a href="menu.html" class="btn nav-link">Menu</a></li>
     <li class="nav-item"><a href="contact.html" class="btn nav-link">Contact Us</a></li>
   </ul>
 </nav>
 
 
+<!-- if javascript is not enabled, show this message -->
+<noscript>
+  You have javascript disabled. This site is best viewed with javascript.
+</noscript>
+
+
+<!-- announcement -->
+<div class="jumbotron d-flex align-items-center">
+  <p>Big news! Yummy Food is opening in Alaska!</p>
+</div>
+
+
 <section id="about">
+  <img src="images/restaurant.jpg" alt="Photo of Yummy Food restaurant." style="border: 1px solid black;" class="img-fluid"> <!-- main restaurant image -->
 
-<img src="images/restaurant.jpg" alt="Photo of Yummy Food." style="max-width: 400px; max-height: 150px;">
+  <article> <!-- restaurant description starts -->
+    <h3>Restaurant Description</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet turpis justo, in lobortis velit posuere nec. In blandit interdum rutrum. Cras auctor faucibus quam, eu interdum tortor vehicula sed. Donec nulla nisi, fermentum a dictum ut, elementum ac sapien. Aliquam eget massa erat. Donec sem turpis, consequat eu laoreet vitae, suscipit vel purus. Duis venenatis ac est ut rhoncus. Nam maximus lorem venenatis, feugiat tellus sit amet, euismod est. Donec eu convallis ex. Nam in leo consectetur, facilisis sem eu, ullamcorper nulla.</p>
+  </article> <!-- restaurant descriptio ends -->
 
-<article>
-  <h3>Restaurant Description</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet turpis justo, in lobortis velit posuere nec. In blandit interdum rutrum. Cras auctor faucibus quam, eu interdum tortor vehicula sed. Donec nulla nisi, fermentum a dictum ut, elementum ac sapien. Aliquam eget massa erat. Donec sem turpis, consequat eu laoreet vitae, suscipit vel purus. Duis venenatis ac est ut rhoncus. Nam maximus lorem venenatis, feugiat tellus sit amet, euismod est. Donec eu convallis ex. Nam in leo consectetur, facilisis sem eu, ullamcorper nulla.</p>
-</article>
-
-<article id="review">
-  <h4>Read a recent review!</h4>
-  <a href="https://www.tripadvisor.co.uk/ShowUserReviews-g196538-d1082778-r773655546-Maison_Lameloise-Chagny_Saone_et_Loire_Bourgogne_Franche_Comte.html" target="_blank">4-star taste</a>,
-  <a href="https://www.tripadvisor.co.uk/ShowUserReviews-g196538-d1082778-r773655546-Maison_Lameloise-Chagny_Saone_et_Loire_Bourgogne_Franche_Comte.html" target="_blank">1-star price</a>
-</article>
-
+  <article id="review"> <!-- reviews starts -->
+    <h4>Read a recent review!</h4>
+    <a href="https://www.tripadvisor.co.uk/ShowUserReviews-g196538-d1082778-r773655546-Maison_Lameloise-Chagny_Saone_et_Loire_Bourgogne_Franche_Comte.html" target="_blank">4-star taste</a>,
+    <a href="https://www.tripadvisor.co.uk/ShowUserReviews-g196538-d1082778-r773655546-Maison_Lameloise-Chagny_Saone_et_Loire_Bourgogne_Franche_Comte.html" target="_blank">1-star price</a>
+  </article> <!-- reviews ends -->
 </section>
 
 
@@ -59,10 +78,10 @@ Most recent revision: 09/12/20
 </footer>
 
 
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="javascript/restaurant.js"></script>
 
 </body>
 
