@@ -101,7 +101,7 @@ Date Submitted: 16/12/20
 
     <div class="form-group row"> <!-- form phone number div starts -->
       <label for="phone" class="col-form-label col-sm-5">Phone:</label>
-      <input class="form-control col-sm-7" type="number" id="phone" name="phone" required><br />
+      <input class="form-control col-sm-7" type="number" id="phone" name="phone" onkeyup="isPhoneValid();" required><br />
       <div class="col-sm-5"></div> <!-- alignment div -->
       <div class="invalid-feedback col-sm-7" id="warning-phone">Phone number must be of the form 12345678910</div>
     </div> <!-- form phone number div ends -->
@@ -138,19 +138,19 @@ Date Submitted: 16/12/20
     <div class="form-group row"> <!-- form contact days div starts -->
       <label for="contactDay" class="col-form-label col-sm-5">Best days to contact you:</label>
       <fieldset id="contactDay" class="form-control col-sm-7">
-        <input type="checkbox" id="m" value="m" name="day">
+        <input type="checkbox" id="m" value="m" name="day"  onclick="isDayValid();">
         <label for="m">M</label>
 
-        <input type="checkbox" id="t" value="t" name="day">
+        <input type="checkbox" id="t" value="t" name="day"  onclick="isDayValid();">
         <label for="t">T</label>
 
-        <input type="checkbox" id="w" value="w" name="day">
+        <input type="checkbox" id="w" value="w" name="day"  onclick="isDayValid();">
         <label for="w">W</label>
 
-        <input type="checkbox" id="th" value="th" name="day">
+        <input type="checkbox" id="th" value="th" name="day"  onclick="isDayValid();">
         <label for="th">Th</label>
 
-        <input type="checkbox" id="f" value="f" name="day">
+        <input type="checkbox" id="f" value="f" name="day"  onclick="isDayValid();">
         <label for="f">F</label>
       </fieldset>
       <div class="col-sm-5"></div> <!-- alignment div -->
